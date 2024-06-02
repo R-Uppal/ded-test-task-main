@@ -9,7 +9,6 @@ test.describe('treaty', () => {
     await expect(anchorElement).toBeVisible();
     await expect(anchorElement).toHaveText('how we do it');
     await anchorElement.click();
-  
     
     await expect(page).toHaveURL('/how-we-do-it');
     const treatyHeading = page.locator('h3', { hasText: 'treaty' });
