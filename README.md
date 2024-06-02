@@ -108,17 +108,30 @@ Install dependencies:
 npm ci
 ```
 
-Run all tests on staging server/production server (see `package.json` scripts):
+Run all tests on staging server/production server from the command line (see `package.json` scripts):
 
 ```
 npm run playwright:staging run
 npm run playwright:production run
 ```
 
+Run all tests on staging/production in GUI mode
+
+```
+npm run playwright:ui:staging
+npm run playwright:ui:production
+```
+
 Run a specific test on staging server server, eg. `university-search`:
 
 ```
 npm run playwright:staging -- tests/university-search.spec.ts
+```
+
+Run a specific test on staging server server in GUI mode, eg. `university-search`:
+
+```
+npm run playwright:ui:staging -- tests/university-search.spec.ts
 ```
 
 Run all tests in headed mode (the browser is visible):

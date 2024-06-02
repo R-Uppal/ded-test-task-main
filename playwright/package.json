@@ -2,7 +2,9 @@
   "private": true,
   "scripts": {
     "playwright:staging": "PLAYWRIGHT_BASE_URL=https://staging.ded1.co npx playwright test",
-    "playwright:production": "PLAYWRIGHT_BASE_URL=https://ded1.co npx playwright test"
+    "playwright:production": "PLAYWRIGHT_BASE_URL=https://ded1.co npx playwright test",
+    "playwright:ui:staging": "PLAYWRIGHT_BASE_URL=https://staging.ded1.co npx playwright test --ui",
+    "playwright:ui:production": "PLAYWRIGHT_BASE_URL=https://ded1.co npx playwright test --ui"
   },
   "devDependencies": {
     "@playwright/test": "^1.32.3",
