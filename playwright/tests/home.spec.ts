@@ -18,6 +18,7 @@ test.describe('home', () => {
     await expect(h2Element).toHaveText('The Demilitarise Education Model');
   
     const investmentElement = page.locator('p.ded-total-investment');
+    await expect(investmentElement).toBeVisible();
     await expect(investmentElement).toContainText('£');
   
     const investmentText = await investmentElement.innerText();
