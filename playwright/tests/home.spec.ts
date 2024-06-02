@@ -25,5 +25,7 @@ test.describe('home', () => {
     const valueFloat = parseFloat(valueString);
     
     expect(valueFloat).toBeGreaterThan(1000000000); // 1bn
+
+    expect(errors).toHaveLength(0);
   });
 });
