@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "playwright:staging": "PLAYWRIGHT_BASE_URL=https://staging.ded1.co npx playwright test",
+    "playwright:production": "PLAYWRIGHT_BASE_URL=https://ded1.co npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.32.3",
+    "typescript": "^5.3.3"
+  }
+}
