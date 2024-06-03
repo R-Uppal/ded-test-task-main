@@ -133,10 +133,3 @@ Run a specific test on staging server server in GUI mode, eg. `university-search
 ```
 npm run playwright:ui:staging -- tests/university-search.spec.ts
 ```
-
-Run all tests in headed mode (the browser is visible):
-
-```
-npm run playwright:staging -- --headed
-npm run playwright:production -- --headed
-```
